@@ -1,0 +1,14 @@
+<h1>
+    Edit a category
+    <a [routerLink]="['/categories']" mat-raised-button>Return</a>
+</h1>
+
+<form *ngIf="form" [formGroup]="form" (ngSubmit)="onSubmitForm()">
+    <div>
+        <mat-form-field>
+            <input matInput placeholder="Label" formControlName="label" required>
+        </mat-form-field>
+    </div>
+
+    <button type="submit" mat-raised-button color="primary">Save</button>
+</form>
