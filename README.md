@@ -4,6 +4,7 @@
 
 Install and run application
 ```
+cp src/config.ts.dist src/config.ts
 npm install
 npm start
 ```
